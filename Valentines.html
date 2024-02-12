@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="./styles.css">
+        
+    </head> 
+    <body>
+        <div class="container">
+            <div >
+                <h1 class = "header_text">Will you be my Valentine?</h1>
+            </div>
+            <div class="gif_container">
+                <img src="https://lh3.googleusercontent.com/pw/ABLVV84Iwgl0buBkuUWId4in8LrSOEMTgXzO5NfZ-CCGyftSTI-LuytEdV1xZlNaKQJRp0gefz35Tht_yKHPXUL_3zpHddz2iqc0p5t88ivLW63myWL4fggYNgkr9b-HWrNWnxS5utNDgAV0SrXcoXjbcDHOML4iUSt6-H5yGZ3OP7Jc_3ewFhpOu4x3xG-rS1Qc_uS0UQPD9I5h8zLNoe_q0hMlRPcxYTDSeRe6npotFknKcpLDDVHyrcwqXQcGkB6BhMA4QtNplVasYxbHYO97wlzNj6syRCCFAStWyDdEE2wSGBpOhBeSNhUX1--pC93agaH6VqdJrDBIJqbsI8pQeDdH8ZEYxzuy-QAzYMDhLSaAfgYsi5KOUAO00P2NZOR-Gv0NpU2PS-UtSYmuWHufbz9hO47to5t-J1xQ25FgR9M-8axypJ8p5tgJ5TES2eBZTfWsHVupUt_cLuXBmmIJJM61Qvel49ZuFmY0lyDIeSLtLPrASk9u2xEoTfrpBhxld8ctkhsfWFK-qGKpvhWJ2VUPx-qdrEGrQTErHbfvt2KKN5GoeDPD609FotF_RC_WpylJMXfy5OE3e6g-TD6zv305m17FqmfLGT3p1cw-iDX8x0hg_fJisWd1vNIedVCyvay4UeSgEPWNw8gWGN2CIRWzjt0dHx91zBcvUWj97t9Mj_28hvYxgNAQ6fbVJ664HlvBTj8mZnQ8-dqthfqKbZjcqKajOsLzWPZvxMeWh26PJ7n7D_hJAMnK8075828EXocUj8x8H18zjaK9qse-KOrp3MXVoYh6wYp4ygY1AHJrrghCpwFsWYc4fAOJQXAv8-D4vkOyah1EcKA_fNDl2NGJkXxpFNe5hwfSkfiWE7vOTkemECOXKqHV8AZjAVfvUw_rK5jFV3u-XvVE3JhicB_OOHU90chLgfNBE2pA5E7kwaCsXCsEcJ1rYdID0A=w659-h879-s-no-gm?authuser=0" alt="Guy with a flowers" width="500" height="400"> 
+                
+            </div>
+            <div class = "buttons">
+                <button class="btn" id = "yesButton" onclick="nextPage()">Yes</button>
+                <button class="btn" id="noButton" onmouseover="moveButton()" onclick="moveButton()">No</button>
+                <script>
+                    function nextPage() {
+                        window.location.href = "yes.html";
+                    }
+                    
+                    function moveButton() {
+                        var x = Math.random() * (window.innerWidth - document.getElementById('noButton').offsetWidth) - 85;
+                        var y = Math.random() * (window.innerHeight - document.getElementById('noButton').offsetHeight) - 48;
+                        document.getElementById('noButton').style.left = `${x}px`;
+                        document.getElementById('noButton').style.top = `${y}px`;
+                    }
+                </script> 
+            </div>
+        </div>
+       
+    </body> 
+</html>
